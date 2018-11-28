@@ -1,4 +1,4 @@
-package com.fearlessbear.androidexperiment;
+package com.fearlessbear.androidexperiment.memory;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +8,14 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.fearlessbear.androidexperiment.R;
+import com.fearlessbear.androidexperiment.view.textview.ImageSpanActivity;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class MemoryListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
         data1.put("title", "当前手机单个应用可用内存");
         list.add(data1);
 
+        //2.ImageSpan
+        HashMap<String, String> data2 = new HashMap<>();
+        data2.put("title", "ImageSpan");
+        list.add(data2);
+
         listview.setAdapter(new SimpleAdapter(
                 this, list, android.R.layout.simple_list_item_1,
                 new String[]{"title"}, new int[]{android.R.id.text1}));
@@ -36,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        startActivity(new Intent(MainActivity.this, CheckOutAppHeapSizeActivity.class));
+                        startActivity(new Intent(MemoryListActivity.this, CheckOutAppHeapSizeActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(MemoryListActivity.this, ImageSpanActivity.class));
                         break;
                 }
             }

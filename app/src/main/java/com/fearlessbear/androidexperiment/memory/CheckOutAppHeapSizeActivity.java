@@ -1,10 +1,12 @@
-package com.fearlessbear.androidexperiment;
+package com.fearlessbear.androidexperiment.memory;
 
 import android.app.ActivityManager;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.fearlessbear.androidexperiment.R;
 
 public class CheckOutAppHeapSizeActivity extends AppCompatActivity {
 

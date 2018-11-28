@@ -9,14 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="._base.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".CheckOutAppHeapSizeActivity">
+
+        <!-- Activity -->
+        <activity android:name=".activity.ActivityListActivity"/>
+        <activity android:name=".activity.ActivityOptionsNo1Activity"/>
+
+        <!-- Memory -->
+        <activity android:name=".memory.MemoryListActivity"/>
+        <activity android:name=".memory.CheckOutAppHeapSizeActivity"/>
+
+        <!-- View -->
+        <!-- TextView -->
+        <activity android:name=".view.textview.ImageSpanActivity"/>
+        <activity android:name=".activity.ActivityOptionsNo2Activity">
         </activity>
     </application>
 
