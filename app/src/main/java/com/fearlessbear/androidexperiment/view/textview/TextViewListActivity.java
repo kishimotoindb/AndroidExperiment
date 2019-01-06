@@ -2,20 +2,20 @@ package com.fearlessbear.androidexperiment.view.textview;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.fearlessbear.androidexperiment.R;
+import com.fearlessbear.androidexperiment._base.BaseActivity;
 import com.fearlessbear.androidexperiment.memory.CheckOutAppHeapSizeActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TextViewListActivity extends AppCompatActivity {
+public class TextViewListActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

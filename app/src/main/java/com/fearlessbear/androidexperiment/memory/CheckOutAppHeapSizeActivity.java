@@ -2,13 +2,13 @@ package com.fearlessbear.androidexperiment.memory;
 
 import android.app.ActivityManager;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.fearlessbear.androidexperiment.R;
+import com.fearlessbear.androidexperiment._base.BaseActivity;
 
-public class CheckOutAppHeapSizeActivity extends AppCompatActivity {
+public class CheckOutAppHeapSizeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,11 +1,11 @@
-package com.fearlessbear.androidexperiment.activity;
+package com.fearlessbear.androidexperiment.components.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
 import com.fearlessbear.androidexperiment.R;
 
-public class ActivityOptionsNo2Activity extends AppCompatActivity {
+public class ActivityOptionsNo2Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
