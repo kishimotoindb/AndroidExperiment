@@ -1,4 +1,4 @@
-package com.fearlessbear.androidexperiment.view.textview;
+package com.fearlessbear.androidexperiment.view;
 
 import android.app.Activity;
 import android.os.Bundle;

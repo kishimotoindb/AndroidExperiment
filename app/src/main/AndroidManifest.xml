@@ -19,8 +19,8 @@
         </activity>
 
         <!-- Service -->
-        <activity android:name=".service.ServiceListActivity"/>
-        <activity android:name=".service.SystemWindowActivity"/>
+        <activity android:name=".components.service.ServiceListActivity"/>
+        <activity android:name=".components.service.SystemWindowActivity"/>
 
         <!-- Activity -->
         <activity android:name=".components.activity.ActivityListActivity"/>
@@ -31,18 +31,21 @@
         <activity android:name=".memory.MemoryListActivity"/>
         <activity android:name=".memory.CheckOutAppHeapSizeActivity"/>
 
-        <!-- View -->
-        <!-- TextView -->
-        <activity android:name=".view.textview.ImageSpanActivity"/>
-        <activity android:name=".components.activity.ActivityOptionsNo2Activity">
-        </activity>
-        <activity android:name=".components.handler.MessageIdActivity">
-        </activity>
+        <!-- View start -->
+        <activity android:name=".view.ViewListActivity"/>
+        <activity android:name=".view.ImageSpanActivity"/>
+        <activity android:name=".components.activity.ActivityOptionsNo2Activity"/>
+        <activity android:name=".view.RightToLeftActivity"/>
+        <!-- View end -->
 
-        <!-- foundation -->
+        <!-- foundation start -->
+        <activity android:name=".components.handler.MessageIdActivity"/>
+        <!-- foundation end -->
+
         <!-- asset -->
         <activity android:name=".foundation.asset.AssetListActivity"/>
         <activity android:name=".foundation.asset.StringPoolActivity"/>
+
     </application>
 
 </manifest>

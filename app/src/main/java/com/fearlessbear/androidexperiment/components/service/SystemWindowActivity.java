@@ -1,4 +1,4 @@
-package com.fearlessbear.androidexperiment.service;
+package com.fearlessbear.androidexperiment.components.service;
 
 import android.Manifest;
 import android.app.Activity;
