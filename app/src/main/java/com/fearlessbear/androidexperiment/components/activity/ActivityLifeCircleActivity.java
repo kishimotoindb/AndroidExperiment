@@ -9,64 +9,30 @@ import android.util.Log;
 
 import com.fearlessbear.androidexperiment.R;
 
-public class FragmentLifeCircleActivity extends Activity {
+/*
+ * 1. Activity的onDestroy、Application里注册的ActivityLifeCycle监听中的onDestroy、Activity中View
+ * 的onDetachFromWindow，这三个方法被调用的顺序
+ * 答：onDestroy -> lifeCycle -> detached
+ */
+public class ActivityLifeCircleActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_life_circle);
         Log.i("xiong", "Activity onCreate");
-        getFragmentManager().beginTransaction().replace(R.id.fl, new FragmentLifeCircleFragment()).commit();
-        /*
-            Activity onCreate
-            Fragment onCreate
-            Fragment onCreateView
-            Fragment onViewCreated
-            Fragment onActivityCreated
-            Activity onStart
-            Fragment onStart
-            Activity onResume
-            Fragment onResume
-            Activity onAttachedToWindow
-         */
     }
 
     @Override
     protected void onStart() {
         Log.i("xiong", "Activity onStart");
         super.onStart();
-        //getFragmentManager().beginTransaction().replace(R.id.fl, new FragmentLifeCircleFragment()).commit();
-        /*
-            Activity onCreate
-            Activity onStart
-            Fragment onCreate
-            Fragment onCreateView
-            Fragment onViewCreated
-            Fragment onActivityCreated
-            Fragment onStart
-            Activity onResume
-            Fragment onResume
-            Activity onAttachedToWindow
-         */
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         Log.i("xiong", "Activity onResume");
-        //getFragmentManager().beginTransaction().replace(R.id.fl, new FragmentLifeCircleFragment()).commit();
-        /*
-            Activity onCreate
-            Activity onStart
-            Activity onResume
-            Fragment onCreate
-            Fragment onCreateView
-            Fragment onViewCreated
-            Fragment onActivityCreated
-            Fragment onStart
-            Fragment onResume
-            Activity onAttachedToWindow
-         */
     }
 
     @Override
