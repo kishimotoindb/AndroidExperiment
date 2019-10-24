@@ -2,15 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fearlessbear.androidexperiment">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-
+        <activity android:name=".foundation.file.FileBaseOpActivity"></activity>
         <activity android:name="._base.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,11 +36,13 @@
         <activity android:name=".components.handler.MessageIdActivity" /> <!-- foundation end -->
         <!-- asset -->
         <activity android:name=".foundation.asset.AssetListActivity" />
-        <activity android:name=".foundation.asset.StringPoolActivity" />
-        <!--file-->
-        <activity android:name=".foundation.file.FileListActivity"/>
-        <activity android:name=".foundation.file.SdcardActivity"/>
+        <activity android:name=".foundation.asset.StringPoolActivity" /> <!-- file -->
+        <activity android:name=".foundation.file.FileListActivity" />
+        <activity android:name=".foundation.file.SdcardActivity" /> <!-- launch mode -->
+        <activity android:name=".launchmode.LaunchModeListActivity" />
+        <activity android:name=".launchmode.SingleTaskActivity" />
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 

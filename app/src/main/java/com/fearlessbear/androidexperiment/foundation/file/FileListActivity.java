@@ -5,10 +5,12 @@ import com.fearlessbear.androidexperiment._base.BaseActivity;
 public class FileListActivity extends BaseActivity {
     {
         mTitle = new String[]{
-                "SdcardActivity"
+                "SdcardActivity",
+                "FileBaseOpActivity"
         };
         mClasses = new Class[]{
-                SdcardActivity.class
+                SdcardActivity.class,
+                FileBaseOpActivity.class
         };
     }
 }
