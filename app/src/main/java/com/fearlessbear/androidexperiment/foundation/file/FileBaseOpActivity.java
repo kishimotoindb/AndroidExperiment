@@ -21,6 +21,12 @@ public class FileBaseOpActivity extends Activity implements View.OnClickListener
         View rename = findViewById(R.id.rename);
         rename.setOnClickListener(this);
 
+        View delete = findViewById(R.id.delete);
+        delete.setOnClickListener(this);
+
+        View canRead = findViewById(R.id.canRead);
+        canRead.setOnClickListener(this);
+
     }
 
     @Override
@@ -29,7 +35,45 @@ public class FileBaseOpActivity extends Activity implements View.OnClickListener
             case R.id.rename:
                 rename();
                 break;
+            case R.id.delete:
+                delete();
+                break;
+            case R.id.canRead:
+                canRead();
+                break;
         }
+    }
+
+    private void canRead() {
+        File file = new File(getCacheDir(), "canRead");
+        Log.d(TAG, "canRead: before create, succ " + file.canRead());
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+        }
+        Log.d(TAG, "canRead: after create, succ " + file.canRead());
+        /*
+         * canRead: before create, succ false
+         * canRead: after create, succ true
+         * 结论：
+         * canRead在文件不存在的时候调用不会crash，返回不可读，相当于判断了文件不存在
+         */
+    }
+
+    private void delete() {
+        File file = new File(getCacheDir(), "delete");
+        Log.d(TAG, "delete: before create, succ " + file.delete());
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+        }
+        Log.d(TAG, "delete: after create, succ " + file.delete());
+        /*
+         * delete: before create, succ false
+         * delete: after create, succ true
+         * 结论：
+         * delete在文件不存在的时候调用不会crash，返回false，相当于判断了文件不存在，所以删除不成功
+         */
     }
 
     private void rename() {
