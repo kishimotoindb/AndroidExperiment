@@ -2,13 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fearlessbear.androidexperiment">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".foundation.file.FileBaseOpActivity"></activity>
+        <activity android:name=".anr.AnrListActivity"></activity>
+        <activity android:name=".anr.InputAnrActivity" />
+        <activity android:name=".foundation.file.FileBaseOpActivity" />
         <activity android:name="._base.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,9 +47,10 @@
         <activity android:name=".foundation.file.SdcardActivity" /> <!-- launch mode -->
         <activity android:name=".launchmode.LaunchModeListActivity" />
         <activity android:name=".launchmode.SingleTaskActivity" />
-    </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <provider
+            android:name=".components.provider.paging.MyContentProvider"
+            android:authorities="contentprovider" />
+    </application>
 
 </manifest>
