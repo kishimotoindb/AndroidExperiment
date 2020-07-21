@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".view.ViewVisibilityListenActivity">
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:id="@+id/startPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启其他页面"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/switchAttach"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="attach or detach" />
+
+    <TextView
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changeVisibility"
+        android:id="@+id/changeVisibility" />
+
+    <com.fearlessbear.androidexperiment.view.ListenLayout
+        android:id="@+id/listenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.ViewVisibilityListenActivity">
+
+
+
+    </com.fearlessbear.androidexperiment.view.ListenLayout>
+</LinearLayout>
