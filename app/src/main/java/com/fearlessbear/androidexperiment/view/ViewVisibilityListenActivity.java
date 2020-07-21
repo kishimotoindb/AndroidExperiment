@@ -34,6 +34,11 @@ import com.fearlessbear.androidexperiment.R;
  * 2020-07-25 14:48:38.102 I/ListenLayout: onVisibilityAggregated: visible false
  * 2020-07-25 14:48:39.558 I/ViewVisibilityListen: onClick: set target visible
  * 2020-07-25 14:48:39.559 I/ListenLayout: onVisibilityAggregated: visible true
+ * 2020-07-25 15:02:05.339 I/ListenLayout: onAttachedToWindow:
+ * 2020-07-25 15:02:05.339 I/ListenLayout: onWindowVisibilityChanged: visible 0
+ * 2020-07-25 15:02:05.339 I/ListenLayout: onVisibilityAggregated: visible true
+ * 2020-07-25 15:02:12.699 I/ListenLayout: onWindowVisibilityChanged: visible 8
+ * 2020-07-25 15:02:12.700 I/ListenLayout: onVisibilityAggregated: visible false
  *
  * 从以上log来看，onVisibilityAggregated可以很好的反映出一个View是否真的对用户可见。attach/detach，
  * visible/gone/invisible，离开页面/回到页面。
