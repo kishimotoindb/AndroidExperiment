@@ -1,6 +1,7 @@
 package com.fearlessbear.androidexperiment._base;
 
 import com.fearlessbear.androidexperiment.anr.AnrListActivity;
+import com.fearlessbear.androidexperiment.arch.ArchListActivity;
 import com.fearlessbear.androidexperiment.components.activity.ActivityListActivity;
 import com.fearlessbear.androidexperiment.components.handler.HandlerListActivity;
 import com.fearlessbear.androidexperiment.components.service.ServiceListActivity;
@@ -22,7 +23,8 @@ public class MainActivity extends BaseActivity {
                 "Memory",
                 "View",
                 "File",
-                "ANR"
+                "ANR",
+                "ARCH"
         };
         mClasses = new Class[]{
                 AssetListActivity.class,
@@ -32,7 +34,8 @@ public class MainActivity extends BaseActivity {
                 MemoryListActivity.class,
                 ViewListActivity.class,
                 FileListActivity.class,
-                AnrListActivity.class
+                AnrListActivity.class,
+                ArchListActivity.class
         };
     }
 }

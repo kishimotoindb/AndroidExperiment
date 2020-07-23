@@ -1,10 +1,11 @@
 package com.fearlessbear.androidexperiment.components.activity;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 /**
  * Created by BigFaceBear on 2019.09.18

@@ -1,12 +1,10 @@
 package com.fearlessbear.androidexperiment.anr;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.fearlessbear.androidexperiment.R;
 import com.fearlessbear.androidexperiment.databinding.ActivityInputAnrBinding;
 
 public class InputAnrActivity extends Activity {

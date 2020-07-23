@@ -1,9 +1,7 @@
 package com.fearlessbear.androidexperiment.foundation.asset;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.fearlessbear.androidexperiment.R;

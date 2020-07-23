@@ -1,8 +1,6 @@
 package com.fearlessbear.androidexperiment.view;
 
 import android.app.Activity;
-import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
