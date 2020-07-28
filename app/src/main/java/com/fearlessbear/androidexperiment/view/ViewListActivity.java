@@ -10,13 +10,15 @@ public class ViewListActivity extends BaseActivity {
                 "当前手机单个应用可用内存",
                 "ImageSpan",
                 "布局右对齐",
-                "监听View对用户的可见性"
+                "监听View对用户的可见性",
+                "EditText弹出键盘的问题"
         };
         mClasses = new Class[]{
                 CheckOutAppHeapSizeActivity.class,
                 ImageSpanActivity.class,
                 RightToLeftActivity.class,
-                ViewVisibilityListenActivity.class
+                ViewVisibilityListenActivity.class,
+                EditTextKeyboardActivity.class
         };
     }
 }

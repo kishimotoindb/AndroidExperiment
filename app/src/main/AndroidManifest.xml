@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".view.EditTextKeyboardActivity"></activity>
         <activity android:name=".arch.paging.PagingListActivity" />
         <activity android:name=".view.ViewVisibilityListenActivity" />
         <activity android:name=".anr.AnrListActivity" />
@@ -51,7 +52,7 @@
         <activity android:name=".foundation.file.SdcardActivity" /> <!-- launch mode -->
         <activity android:name=".launchmode.LaunchModeListActivity" />
         <activity android:name=".launchmode.SingleTaskActivity" />
-        <activity android:name=".arch.ArchListActivity"/>
+        <activity android:name=".arch.ArchListActivity" />
 
         <provider
             android:name=".components.provider.paging.MyContentProvider"
