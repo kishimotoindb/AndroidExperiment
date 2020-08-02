@@ -1,15 +1,12 @@
 package com.fearlessbear.androidexperiment.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 
 import com.fearlessbear.androidexperiment.R;
 
-public class EditTextKeyboardActivity extends AppCompatActivity {
+public class EditTextKeyboardActivity extends Activity {
 
     private View editText;
 

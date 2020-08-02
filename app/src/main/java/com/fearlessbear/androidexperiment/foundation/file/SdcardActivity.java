@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-
 import com.fearlessbear.androidexperiment.R;
 
 import java.io.File;
@@ -53,7 +51,7 @@ public class SdcardActivity extends Activity {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         writeExternalStorage();
     }

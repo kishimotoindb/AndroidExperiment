@@ -6,10 +6,12 @@ import com.fearlessbear.androidexperiment.components.activity.ActivityOptionsNo1
 public class HandlerListActivity extends BaseActivity {
     {
         mTitle = new String[]{
-                "Message Id"
+                "Message Id",
+                "Logging"
         };
         mClasses = new Class[]{
-                MessageIdActivity.class
+                MessageIdActivity.class,
+                LooperLoggingActivity.class
         };
     }
 }

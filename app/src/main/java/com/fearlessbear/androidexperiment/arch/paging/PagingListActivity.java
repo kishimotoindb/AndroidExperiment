@@ -7,18 +7,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.fearlessbear.androidexperiment.arch.paging.model.Student;
+import com.fearlessbear.androidexperiment.arch.paging.model.StudentDatabase;
+import com.fearlessbear.androidexperiment.databinding.ActivityPagingListBinding;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
-
-import com.fearlessbear.androidexperiment.arch.paging.model.Student;
-import com.fearlessbear.androidexperiment.arch.paging.model.StudentDatabase;
-import com.fearlessbear.androidexperiment.databinding.ActivityPagingListBinding;
 
 public class PagingListActivity extends AppCompatActivity {
 
