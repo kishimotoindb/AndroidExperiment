@@ -1,102 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fearlessbear.androidexperiment">
+<manifest package="com.fearlessbear.androidexperiment"
+  xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <application
-        android:name=".MyApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light">
+  <application
+    android:name=".MyApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.AppCompat.Light">
+    <activity android:name=".view.hierarchy.HierarchyActivity"></activity>
+    <activity android:name="._base.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name="._base.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-            </intent-filter>
-        </activity>
-
-
-        <!-- arch -->
-        <activity android:name=".arch.ArchListActivity" />
-        <activity android:name=".arch.paging.PagingListActivity" />
-
-
-        <!-- Service -->
-        <activity android:name=".components.service.ServiceListActivity" />
-        <activity android:name=".components.service.SystemWindowActivity" />
-
-        <!-- Activity -->
-        <activity android:name=".components.activity.ActivityListActivity" />
-        <activity android:name=".components.activity.ActivityOptionsNo1Activity" />
-        <activity android:name=".components.activity.FragmentLifeCircleActivity" />
-        <activity android:name=".components.activity.ActivityLifeCircleActivity" />
-        <activity android:name=".components.activity.ViewPageFragmentLifeCircleActivity" />
-        <activity android:name=".components.activity.OptionsMenuActivity" /> <!-- Memory -->
-        <activity android:name=".components.activity.ActivityOptionsNo2Activity" />
-
-        <!-- Memory -->
-        <activity android:name=".memory.MemoryListActivity" />
-        <activity android:name=".memory.CheckOutAppHeapSizeActivity" />
-
-        <!-- View start -->
-        <activity android:name=".view.ViewListActivity" />
-        <activity android:name=".view.ImageSpanActivity" />
-        <activity android:name=".view.RightToLeftActivity" />
-        <activity android:name=".view.EditTextKeyboardActivity"/>
-        <activity android:name=".view.ViewVisibilityListenActivity" />
-
-
-        <!-- anr -->
-        <activity android:name=".anr.AnrListActivity" />
-        <activity android:name=".anr.InputAnrActivity" />
-
-        <!-- handler -->
-        <activity android:name=".components.handler.HandlerListActivity"/>
-        <activity android:name=".components.handler.LooperLoggingActivity"/>
-        <activity android:name=".components.handler.MessageIdActivity" />
-
-        <!-- asset -->
-        <activity android:name=".foundation.asset.AssetListActivity" />
-        <activity android:name=".foundation.asset.StringPoolActivity" />
-
-        <!-- file -->
-        <activity android:name=".foundation.file.FileListActivity" />
-        <activity android:name=".foundation.file.SdcardActivity" />
-        <activity android:name=".foundation.file.FileBaseOpActivity" />
-
-        <!--launch mode-->
-        <!--        <activity android:name=".launchmode.LaunchModeListActivity" />-->
-        <!--        <activity android:name=".launchmode.StandardActivity" />-->
-        <!--        <activity-->
-        <!--            android:name=".launchmode.StandardNotSameAffinityActivity"-->
-        <!--            android:taskAffinity="notSame" />-->
-        <!--        <activity-->
-        <!--            android:name=".launchmode.SingleTaskActivity"-->
-        <!--            android:launchMode="singleTask" />-->
-        <!--        <activity-->
-        <!--            android:name=".launchmode.SingleInstanceTaskAffinityNotSameActivity"-->
-        <!--            android:launchMode="singleInstance"-->
-        <!--            android:taskAffinity="notSame" />-->
-        <!--        <activity-->
-        <!--            android:name=".launchmode.SingleInstanceAffinitySameActivity"-->
-        <!--            android:launchMode="singleInstance" />-->
-
-        <!--        <provider-->
-        <!--            android:name=".components.provider.paging.MyContentProvider"-->
-        <!--            android:authorities="contentprovider" />-->
-
-
-    </application>
-
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+      </intent-filter>
+    </activity> <!-- arch -->
+    <activity android:name=".arch.ArchListActivity" />
+    <activity android:name=".arch.paging.PagingListActivity" /> <!-- Service -->
+    <activity android:name=".components.service.ServiceListActivity" />
+    <activity android:name=".components.service.SystemWindowActivity" /> <!-- Activity -->
+    <activity android:name=".components.activity.ActivityListActivity" />
+    <activity android:name=".components.activity.ActivityOptionsNo1Activity" />
+    <activity android:name=".components.activity.FragmentLifeCircleActivity" />
+    <activity android:name=".components.activity.ActivityLifeCircleActivity" />
+    <activity android:name=".components.activity.ViewPageFragmentLifeCircleActivity" />
+    <activity android:name=".components.activity.OptionsMenuActivity" /> <!-- Memory -->
+    <activity android:name=".components.activity.ActivityOptionsNo2Activity" /> <!-- Memory -->
+    <activity android:name=".memory.MemoryListActivity" />
+    <activity android:name=".memory.CheckOutAppHeapSizeActivity" /> <!-- View start -->
+    <activity android:name=".view.ViewListActivity" />
+    <activity android:name=".view.ImageSpanActivity" />
+    <activity android:name=".view.RightToLeftActivity" />
+    <activity android:name=".view.EditTextKeyboardActivity" />
+    <activity android:name=".view.ViewVisibilityListenActivity" /> <!-- anr -->
+    <activity android:name=".anr.AnrListActivity" />
+    <activity android:name=".anr.InputAnrActivity" /> <!-- handler -->
+    <activity android:name=".components.handler.HandlerListActivity" />
+    <activity android:name=".components.handler.LooperLoggingActivity" />
+    <activity android:name=".components.handler.MessageIdActivity" /> <!-- asset -->
+    <activity android:name=".foundation.asset.AssetListActivity" />
+    <activity android:name=".foundation.asset.StringPoolActivity" /> <!-- file -->
+    <activity android:name=".foundation.file.FileListActivity" />
+    <activity android:name=".foundation.file.SdcardActivity" />
+    <activity android:name=".foundation.file.FileBaseOpActivity" />
+  </application>
 
 </manifest>
