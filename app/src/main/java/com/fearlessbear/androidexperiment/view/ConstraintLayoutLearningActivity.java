@@ -38,6 +38,9 @@ public class ConstraintLayoutLearningActivity extends AppCompatActivity {
     /*
      * 实验二：
      * 正常ViewGroup中的margin在View设置为GONE后是否还生效？
+     * 设置为GONE后，leftView的margin就不生效了。
+     *
+     * 从这个点来说，constraintLayout的goneMargin，实际上的作用反倒是在view隐藏的时候仍然使margin生效。
      */
     mExpr2MarginEndView = findViewById(R.id.expr2_margin_end_view);
     mExpr2Button = findViewById(R.id.expr2_button);
@@ -49,6 +52,7 @@ public class ConstraintLayoutLearningActivity extends AppCompatActivity {
     /*
      * 实验三：
      * 正常ViewGroup中的margin在View设置为Invisible后是否还生效？
+     * 设置为invisible，leftView的margin仍然生效
      */
     mExpr3MarginEndView = findViewById(R.id.expr3_margin_end_view);
     mExpr3Button = findViewById(R.id.expr3_button);
