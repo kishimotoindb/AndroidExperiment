@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".view.ConstraintLayoutLearningActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00aa00">
+
+    <View
+      android:id="@+id/anchor"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:background="#ff0000"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+      android:layout_width="100dp"
+      android:layout_height="50dp"
+      android:background="#ffffff"
+      app:layout_constraintStart_toEndOf="@id/anchor"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="end"
+      app:barrierMargin="100dp"
+      app:constraint_referenced_ids="anchor" />
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="100dp" />
+
+    <TextView
+      android:id="@+id/left_view"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:background="#0000ff"
+      android:text="星标"
+      android:textColor="@color/colorAccent"
+      app:layout_constraintStart_toStartOf="@id/barrier"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+      android:id="@+id/placeholder"
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      app:layout_constraintStart_toEndOf="@id/left_view"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+      android:id="@+id/right_view"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:background="@color/colorAccent"
+      app:layout_constraintStart_toEndOf="@id/placeholder"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <Button
+    android:id="@+id/expr1_button"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#a00000"
+    android:gravity="center"
+    android:text="expr1" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+      android:id="@+id/expr2_margin_end_view"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginEnd="100dp"
+      android:background="#00ff00" />
+
+    <View
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:background="#ff0000" />
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/expr2_button"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#a00000"
+    android:gravity="center"
+    android:text="expr2-gone-margin" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+      android:id="@+id/expr3_margin_end_view"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginEnd="100dp"
+      android:background="#00ff00" />
+
+    <View
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:background="#ff0000" />
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/expr3_button"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#a00000"
+    android:gravity="center"
+    android:text="expr3-invisible-margin" />
+</LinearLayout>

@@ -13,7 +13,7 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AppCompat.Light">
-    <activity android:name=".view.hierarchy.HierarchyActivity"></activity>
+    <activity android:name=".view.ConstraintLayoutLearningActivity"></activity>
     <activity android:name="._base.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -41,6 +41,9 @@
     <activity android:name=".view.ImageSpanActivity" />
     <activity android:name=".view.RightToLeftActivity" />
     <activity android:name=".view.EditTextKeyboardActivity" />
+    <activity android:name=".view.hierarchy.HierarchyActivity" />
+    <activity android:name=".view.performance.PerformanceListActivity" />
+    <activity android:name=".view.performance.layout.LayoutListActivity" />
     <activity android:name=".view.ViewVisibilityListenActivity" /> <!-- anr -->
     <activity android:name=".anr.AnrListActivity" />
     <activity android:name=".anr.InputAnrActivity" /> <!-- handler -->
