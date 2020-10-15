@@ -1,0 +1,2 @@
+用于学习Fragment与视图系统的关系。
+1.Activity中承载DialogFragment的容器View是谁？
