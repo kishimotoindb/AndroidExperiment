@@ -14,6 +14,11 @@ import com.fearlessbear.androidexperiment.R;
 
 public class MyDialogFragment extends DialogFragment {
 
+  /*
+   * DialogFragment在执行onCreateView()的时候，container传入的是null。
+   * 1）所以就是说在调用DialogFragment.show()的时候没有传入containerId，结果就是DialogFragment的确没有container。
+   * 2）这也就能解释为什么DialogFragment的布局xml文件中，根View的Layout参数无效。
+   */
   @Nullable
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
