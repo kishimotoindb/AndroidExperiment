@@ -1,4 +1,4 @@
-package com.fearlessbear.androidexperiment.view.component;
+package com.fearlessbear.androidexperiment.view.widget;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;

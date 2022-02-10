@@ -2,7 +2,7 @@ package com.fearlessbear.androidexperiment.view;
 
 import com.fearlessbear.androidexperiment._base.BaseActivity;
 import com.fearlessbear.androidexperiment.memory.CheckOutAppHeapSizeActivity;
-import com.fearlessbear.androidexperiment.view.component.ComponentListActivity;
+import com.fearlessbear.androidexperiment.view.widget.WidgetListActivity;
 import com.fearlessbear.androidexperiment.view.fragment.FragmentListActivity;
 import com.fearlessbear.androidexperiment.view.hierarchy.HierarchyActivity;
 import com.fearlessbear.androidexperiment.view.performance.PerformanceListActivity;
@@ -32,7 +32,7 @@ public class ViewListActivity extends BaseActivity {
         PerformanceListActivity.class,
         ConstraintLayoutLearningActivity.class,
         FragmentListActivity.class,
-        ComponentListActivity.class,
+        WidgetListActivity.class,
     };
   }
 }

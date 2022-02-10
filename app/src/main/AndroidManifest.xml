@@ -13,6 +13,9 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AppCompat.Light">
+    <activity android:name=".view.window.OpenNewWindowEffectKeyboardDisplayActivity"
+      android:windowSoftInputMode="stateUnchanged"/>
+    <activity android:name=".view.widget.TextWatcherActivity" />
     <activity android:name=".view.ConstraintLayoutLearningActivity" />
     <activity android:name="._base.MainActivity">
       <intent-filter>
@@ -46,9 +49,8 @@
     <activity android:name=".view.performance.layout.LayoutListActivity" />
     <activity android:name=".view.ViewVisibilityListenActivity" />
     <activity android:name=".view.fragment.FragmentListActivity" />
-    <activity android:name=".view.component.ComponentListActivity" />
-    <activity android:name=".view.component.PopupWindowActivity" />
-
+    <activity android:name=".view.widget.WidgetListActivity" />
+    <activity android:name=".view.widget.PopupWindowActivity" />
     <activity android:name=".view.fragment.DialogFragmentLearnActivity" /> <!-- anr -->
     <activity android:name=".anr.AnrListActivity" />
     <activity android:name=".anr.InputAnrActivity" /> <!-- handler -->
@@ -60,6 +62,8 @@
     <activity android:name=".foundation.file.FileListActivity" />
     <activity android:name=".foundation.file.SdcardActivity" />
     <activity android:name=".foundation.file.FileBaseOpActivity" />
+    <activity android:name=".packaging.PackageListActivity" />
+    <activity android:name=".view.window.WindowListActivity" />
   </application>
 
 </manifest>
