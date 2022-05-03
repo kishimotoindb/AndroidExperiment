@@ -9,6 +9,7 @@ import com.fearlessbear.androidexperiment.foundation.asset.AssetListActivity;
 import com.fearlessbear.androidexperiment.foundation.file.FileListActivity;
 import com.fearlessbear.androidexperiment.memory.MemoryListActivity;
 import com.fearlessbear.androidexperiment.packaging.PackageListActivity;
+import com.fearlessbear.androidexperiment.uri.UriMenuActivity;
 import com.fearlessbear.androidexperiment.view.ViewListActivity;
 import com.fearlessbear.androidexperiment.view.window.WindowListActivity;
 
@@ -29,6 +30,7 @@ public class MainActivity extends BaseActivity {
         "ARCH",
         "打包相关",
         "Window",
+        "uri",
     };
     mClasses = new Class[]{
         AssetListActivity.class,
@@ -42,6 +44,7 @@ public class MainActivity extends BaseActivity {
         ArchListActivity.class,
         PackageListActivity.class,
         WindowListActivity.class,
+        UriMenuActivity.class,
     };
   }
 }

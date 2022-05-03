@@ -13,8 +13,20 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.AppCompat.Light">
-    <activity android:name=".view.window.OpenNewWindowEffectKeyboardDisplayActivity"
-      android:windowSoftInputMode="stateUnchanged"/>
+    <activity
+      android:name=".view.widget.recycler.StaggeredLayoutActivity"
+      android:exported="false" />
+    <activity
+      android:name=".view.widget.recycler.RecyclerBaseLearnActivity"
+      android:exported="false" />
+    <activity
+      android:name=".view.scroll.nested.NestedScrollParentActivity"
+      android:exported="false" />
+    <activity android:name=".uri.UriEncodeActivity" />
+    <activity android:name=".uri.UriMenuActivity" />
+    <activity
+      android:name=".view.window.OpenNewWindowEffectKeyboardDisplayActivity"
+      android:windowSoftInputMode="stateUnchanged" />
     <activity android:name=".view.widget.TextWatcherActivity" />
     <activity android:name=".view.ConstraintLayoutLearningActivity" />
     <activity android:name="._base.MainActivity">
