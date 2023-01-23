@@ -29,10 +29,18 @@ class MyAdapter : RecyclerView.Adapter<MyHolder>() {
 
   override fun onBindViewHolder(holder: MyHolder, position: Int) {
     holder.txt.text = "$position"
-    (holder.view.layoutParams as StaggeredGridLayoutManager.LayoutParams).isFullSpan = position % 3 == 0
+    //(holder.view.layoutParams as StaggeredGridLayoutManager.LayoutParams).isFullSpan = position
+    //% 3 == 0
   }
 
   override fun getItemCount(): Int = 50
+
+  override fun onViewAttachedToWindow(holder: MyHolder) {
+    super.onViewAttachedToWindow(holder)
+    (holder.view.layoutParams as StaggeredGridLayoutManager.LayoutParams).isFullSpan = holder.adapterPosition %
+    5 == 0
+
+  }
 
 
 }
